@@ -46,9 +46,9 @@
          <h4>Table</h4>
          <p>Here are the foods and drinks that I like the most and I recomend to others and below there is a table indicates their locations and prices</p>
 
-         <table>
+         <table style="border-style: solid;border-collapse:collapse ;">
              <tr>
-                 <th>Food/Drinks</th>
+                 <th style >Food/Drinks</th>
                  <th>Location</th>
                  <th>Price</th>
 
@@ -82,8 +82,8 @@
 
      <hr>
      <h3>Prüfer code</h3>
-     <blockquote>The Prüfer code is a way of encoding a labeled tree with n vertices using a sequence of n−2 integers in the interval [0;n−1]. This encoding also acts as a bijection between all spanning trees of a complete graph and the numerical sequences.</blockquote>
-     <a href="https://cp-algorithms.com/graph/pruefer_code.html">quick-link to the source</a>
+     <blockquote> Graphentheorie bezeichnet ein Prüfer-Code eine Folge, die einen beschrifteten Baum eineindeutig beschreibt. Der Code für einen Baum mit {\displaystyle n}n Knoten hat die Länge {\displaystyle n-2}n-2 und kann mit einem einfachen iterativen Algorithmus erstellt werden. Prüfer-Codes wurden 1918 von Heinz Prüfer eingeführt, um die Cayley-Formel zu beweisen..</blockquote>
+     <a href="https://de.wikipedia.org/wiki/Pr%C3%BCfer-Code">quick-link to the source</a>
      <pre>vector<vector<int>> adj;
 
         vector<int> pruefer_code() {
@@ -113,7 +113,7 @@
                 if (--degree[v] == 1)
                     leafs.insert(v);
             }
-        
+            <a href="https://cp-algorithms.com/graph/pruefer_code.html">quick-link to the source</a>
             return code;
         }</pre>
 
